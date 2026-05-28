@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Catherine Echendu"
+  description: "Data portfolio: commercial analytics, customer intelligence, workforce analytics"
+  favicon: ""
+  navbar: false
+  page-footer: ""
+
+format:
+  html:
+    css: styles.css
+    theme: none
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    page-layout: custom
+    template-partials:
+      - title-block.html
