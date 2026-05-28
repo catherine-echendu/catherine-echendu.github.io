@@ -157,3 +157,52 @@ a:hover {
     padding: 80px 20px 60px;
   }
 }
+
+/* ── Proof Strip ── */
+.proof-strip {
+  background-color: #F0EDE8;
+  padding: 0;
+  max-width: 100%;
+}
+
+.proof-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.proof-row {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.proof-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #666666;
+  min-width: 160px;
+  flex-shrink: 0;
+}
+
+.proof-chips {
+  font-size: 0.9rem;
+  color: #2A2A2A;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .proof-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .proof-label {
+    min-width: unset;
+  }
+}

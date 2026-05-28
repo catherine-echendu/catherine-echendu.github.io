@@ -13,3 +13,20 @@ format:
     <a href="#work" class="cta-button">See my work</a>
   </div>
 </section>
+
+<section class="proof-strip full-width" id="proof">
+  <div class="proof-inner">
+    <div class="proof-row">
+      <span class="proof-label">Commercial background</span>
+      <span class="proof-chips">FCA-regulated fintech · Head of Business Development · Revenue ownership · Campaign ROI</span>
+    </div>
+    <div class="proof-row">
+      <span class="proof-label">Built evidence</span>
+      <span class="proof-chips">Workforce analytics project · SQL validation · Power BI · R · Governance</span>
+    </div>
+    <div class="proof-row">
+      <span class="proof-label">Building next</span>
+      <span class="proof-chips">Customer &amp; Revenue Intelligence · Churn · Funnel · Hypothesis testing · Automation</span>
+    </div>
+  </div>
+</section>
