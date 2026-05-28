@@ -326,3 +326,39 @@ a:hover {
 .card-link:hover {
   opacity: 0.6;
 }
+
+/* ── About ── */
+.about {
+  background-color: #F0EDE8;
+  max-width: 100%;
+  padding: 80px 24px;
+}
+
+.about > * {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #777777;
+  margin-bottom: 28px;
+}
+
+.about-body p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #2A2A2A;
+  margin-bottom: 1.1rem;
+}
+
+.about-location {
+  font-size: 0.88rem;
+  color: #666666;
+  font-weight: 500;
+  margin-top: 20px;
+}

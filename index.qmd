@@ -76,3 +76,12 @@ format:
 
   </div>
 </section>
+
+<section class="about" id="about">
+  <h2 class="about-heading">About Catherine</h2>
+  <div class="about-body">
+    <p>I learnt early in fintech sales that a number is never just a number. It could be a campaign that was not working, a client about to leave, or a target the team still had to hit before month end.</p>
+    <p>That is still how I read data. I look for what the number is trying to say about a decision, not just what it is.</p>
+    <p class="about-location">Poole/London · Open to hybrid and remote UK roles</p>
+  </div>
+</section>
