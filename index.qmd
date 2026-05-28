@@ -5,4 +5,11 @@ format:
     page-layout: custom
 ---
 
-<!-- sections will be added in Tasks 4-8 -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <h1>Catherine Echendu</h1>
+    <p class="hero-hook">Before dashboards, I owned the number.</p>
+    <p class="hero-value">I build customer and revenue intelligence for teams that need churn, retention and commercial performance translated into clear decisions.</p>
+    <a href="#work" class="cta-button">See my work</a>
+  </div>
+</section>

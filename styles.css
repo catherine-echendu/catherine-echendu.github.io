@@ -85,3 +85,75 @@ a {
 a:hover {
   color: #444444;
 }
+
+/* ── Hero ── */
+.hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 24px 80px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Subtle data grid background */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.hero-hook {
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-style: italic;
+  color: #444444;
+  margin: 20px 0 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.hero-value {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: #2A2A2A;
+  max-width: 600px;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #1A1A1A;
+  color: #FAFAF8;
+  padding: 14px 32px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: opacity 0.2s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.75;
+  color: #FAFAF8;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+    padding: 80px 20px 60px;
+  }
+}
