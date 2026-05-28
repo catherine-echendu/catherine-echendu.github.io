@@ -362,3 +362,44 @@ a:hover {
   font-weight: 500;
   margin-top: 20px;
 }
+
+/* ── Contact ── */
+.contact {
+  padding: 80px 24px 100px;
+  text-align: center;
+}
+
+.contact-heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #777777;
+  margin-bottom: 24px;
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 1rem;
+}
+
+.contact-link {
+  color: #1A1A1A;
+  text-decoration: none;
+  border-bottom: 1px solid #1A1A1A;
+  padding-bottom: 2px;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  opacity: 0.6;
+}
+
+.contact-separator {
+  color: #AAAAAA;
+  font-size: 1.2rem;
+  line-height: 1;
+}

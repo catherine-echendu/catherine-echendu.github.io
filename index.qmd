@@ -85,3 +85,12 @@ format:
     <p class="about-location">Poole/London · Open to hybrid and remote UK roles</p>
   </div>
 </section>
+
+<section class="contact" id="contact">
+  <h2 class="contact-heading">Get in touch</h2>
+  <div class="contact-links">
+    <a href="https://www.linkedin.com/in/catherineechendu" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+    <span class="contact-separator">·</span>
+    <a href="mailto:catherineechendu.uk@gmail.com" class="contact-link">catherineechendu.uk@gmail.com</a>
+  </div>
+</section>
