@@ -30,3 +30,49 @@ format:
     </div>
   </div>
 </section>
+
+<section class="body-of-work" id="work">
+  <div class="project-grid">
+
+    <!-- Card 1: WERS -->
+    <div class="project-card">
+      <div class="card-tags">
+        <span class="tag">Workforce Analytics</span>
+        <span class="tag">People Data</span>
+        <span class="tag">Survey Methodology</span>
+      </div>
+      <h2 class="card-title">Workforce Reward &amp; Retention Analysis</h2>
+      <p class="card-question">Which reward and workplace levers most influence employee retention, and how should employers prioritise action with limited budget?</p>
+      <div class="card-proof">
+        21,981 employee survey responses · Weighted analysis · Regression modelling · Decision-tree modelling
+      </div>
+      <div class="card-tools">R · SQL · Power BI · Excel</div>
+      <div class="card-status">
+        <span class="status-dot in-progress"></span>
+        In progress. Modelling complete, Power BI dashboard in development.
+      </div>
+      <a href="https://github.com/catherine-echendu/workforce-reward-satisfaction-analysis" class="card-link" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+
+    <!-- Card 2: Customer & Revenue Intelligence -->
+    <div class="project-card">
+      <div class="card-tags">
+        <span class="tag">Commercial Analytics</span>
+        <span class="tag">Fintech</span>
+        <span class="tag">Customer MI</span>
+      </div>
+      <h2 class="card-title">Customer &amp; Revenue Intelligence System</h2>
+      <p class="card-question">Where are customers churning, what drives retention, and how can commercial teams act on it faster?</p>
+      <div class="card-proof">
+        Churn · Funnel analysis · Segmentation · Hypothesis testing · Automation · AI-assisted executive summaries
+      </div>
+      <div class="card-tools">SQL · Power BI · DAX · R · n8n</div>
+      <div class="card-status">
+        <span class="status-dot in-development"></span>
+        In development. Scope defined, build planned.
+      </div>
+      <!-- No button until repo exists -->
+    </div>
+
+  </div>
+</section>
