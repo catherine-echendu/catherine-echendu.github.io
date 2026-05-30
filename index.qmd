@@ -5,6 +5,7 @@ format:
     page-layout: custom
 ---
 
+```{=html}
 <section class="hero" id="hero">
   <div class="hero-content">
     <h1>Catherine Echendu</h1>
@@ -94,3 +95,4 @@ format:
     <a href="mailto:catherineechendu.uk@gmail.com" class="contact-link">catherineechendu.uk@gmail.com</a>
   </div>
 </section>
+```
