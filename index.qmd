@@ -1,98 +1,122 @@
 ---
 title: ""
-format:
-  html:
-    page-layout: custom
+pagetitle: "Catherine Echendu | Business Signal & Decision Support"
 ---
 
 ```{=html}
-<section class="hero" id="hero">
-  <div class="hero-content">
-    <h1>Catherine Echendu</h1>
-    <p class="hero-hook">Before dashboards, I owned the number.</p>
-    <p class="hero-value">I build customer and revenue intelligence for teams that need churn, retention and commercial performance translated into clear decisions.</p>
-    <a href="#work" class="cta-button">See my work</a>
-  </div>
-</section>
+<nav class="site-nav">
+  <a href="index.html" class="nav-brand">Catherine E.</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-active">Home</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-<section class="proof-strip full-width" id="proof">
-  <div class="proof-inner">
-    <div class="proof-row">
-      <span class="proof-label">Commercial background</span>
-      <span class="proof-chips">FCA-regulated fintech · Head of Business Development · Revenue ownership · Campaign ROI</span>
+<main class="page home">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <p class="hero-kicker">Business signal &middot; Decision support</p>
+        <h1>Catherine Echendu</h1>
+        <p class="hero-hook">Data is only useful when it changes a decision.</p>
+        <p class="hero-value">Before dashboards, I owned the number. Now I build customer, revenue and workforce intelligence that helps teams understand what is changing, what matters, and what action to take.</p>
+        <div class="hero-actions">
+          <a href="work.html" class="btn btn-primary">See my work</a>
+          <a href="about.html" class="btn btn-ghost">My story</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="portrait-frame">
+          <img src="images/catherine.jpg" alt="Catherine Echendu" class="portrait" />
+        </div>
+        <div class="signal-card">
+          <div class="signal-item">
+            <span class="signal-label">People data</span>
+            <span class="signal-value"><span class="data">21,981</span> employee responses analysed</span>
+          </div>
+          <div class="signal-item">
+            <span class="signal-label">Commercial pressure</span>
+            <span class="signal-value"><span class="data">£300k to £600k</span> monthly revenue against <span class="data">£75k</span> target</span>
+          </div>
+          <div class="signal-item">
+            <span class="signal-label">Decision impact</span>
+            <span class="signal-impact"><span class="impact-line">SLA breaches down from <span class="data">8 to 3</span></span><span class="impact-line">Reporting errors cut <span class="data">35%</span></span></span>
+          </div>
+          <!-- Future enhancement: optional "Let me walk you through the work" video CTA linking to a project walkthrough once a real video exists. -->
+        </div>
+      </div>
     </div>
-    <div class="proof-row">
-      <span class="proof-label">Built evidence</span>
-      <span class="proof-chips">Workforce analytics project · SQL validation · Power BI · R · Governance</span>
+  </section>
+
+  <section class="how">
+    <div class="how-inner">
+      <div class="how-step">
+        <span class="how-num">01</span>
+        <h2 class="how-title">Business question</h2>
+        <p class="how-text">I start with what the team needs to decide.</p>
+      </div>
+      <div class="how-step">
+        <span class="how-num">02</span>
+        <h2 class="how-title">Signal in the data</h2>
+        <p class="how-text">I find what the data is actually saying.</p>
+      </div>
+      <div class="how-step">
+        <span class="how-num">03</span>
+        <h2 class="how-title">Decision to act on</h2>
+        <p class="how-text">I turn the evidence into something people can use.</p>
+      </div>
     </div>
-    <div class="proof-row">
-      <span class="proof-label">Building next</span>
-      <span class="proof-chips">Customer &amp; Revenue Intelligence · Churn · Funnel · Hypothesis testing · Automation</span>
+  </section>
+
+  <section class="proofrow">
+    <div class="proofrow-inner">
+      <div class="proofrow-grid">
+
+        <div class="proof-card">
+          <span class="proof-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 6.2A3.6 3.6 0 0 0 9.5 8v3.5"/><path d="M7 11.5h7"/><path d="M7 18h10"/><path d="M9.5 11.5V15c0 1.4-.6 2.3-1.7 3"/></svg>
+          </span>
+          <span class="proof-body"><span class="proof-main">Revenue ownership</span><span class="proof-sub">£300k to £600k monthly</span><span class="proof-sub">against £75k target</span></span>
+        </div>
+
+        <div class="proof-card">
+          <span class="proof-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V5z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <span class="proof-body"><span class="proof-main">FCA-regulated</span><span class="proof-sub">Fintech experience</span></span>
+        </div>
+
+        <div class="proof-card">
+          <span class="proof-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="13" width="3.6" height="7" rx="1"/><rect x="10.2" y="9" width="3.6" height="11" rx="1"/><rect x="16.4" y="4" width="3.6" height="16" rx="1"/></svg>
+          </span>
+          <span class="proof-body"><span class="proof-main">Evidence stack</span><span class="proof-sub">Power BI · SQL</span><span class="proof-sub">Excel · R</span></span>
+        </div>
+
+        <div class="proof-card">
+          <span class="proof-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 21 8H3z"/><path d="M4 21h16"/><path d="M5 21V10"/><path d="M9.5 21V10"/><path d="M14.5 21V10"/><path d="M19 21V10"/></svg>
+          </span>
+          <span class="proof-body"><span class="proof-main">Public sector operations</span><span class="proof-sub">Handling time down 25%</span><span class="proof-sub">First-call resolution up 30%</span></span>
+        </div>
+
+      </div>
     </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-copy">&copy; 2026 Catherine Echendu &middot; Poole/London</span>
+    <span class="footer-links">
+      <a href="https://www.linkedin.com/in/catherineechendu" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/catherine-echendu" target="_blank" rel="noopener">GitHub</a>
+    </span>
   </div>
-</section>
-
-<section class="body-of-work" id="work">
-  <div class="project-grid">
-
-    <!-- Card 1: WERS -->
-    <div class="project-card">
-      <div class="card-tags">
-        <span class="tag">Workforce Analytics</span>
-        <span class="tag">People Data</span>
-        <span class="tag">Survey Methodology</span>
-      </div>
-      <h2 class="card-title">Workforce Reward &amp; Retention Analysis</h2>
-      <p class="card-question">Which reward and workplace levers most influence employee retention, and how should employers prioritise action with limited budget?</p>
-      <div class="card-proof">
-        21,981 employee survey responses · Weighted analysis · Regression modelling · Decision-tree modelling
-      </div>
-      <div class="card-tools">R · SQL · Power BI · Excel</div>
-      <div class="card-status">
-        <span class="status-dot in-progress"></span>
-        In progress. Modelling complete, Power BI dashboard in development.
-      </div>
-      <a href="https://github.com/catherine-echendu/workforce-reward-satisfaction-analysis" class="card-link" target="_blank" rel="noopener">View on GitHub</a>
-    </div>
-
-    <!-- Card 2: Customer & Revenue Intelligence -->
-    <div class="project-card">
-      <div class="card-tags">
-        <span class="tag">Commercial Analytics</span>
-        <span class="tag">Fintech</span>
-        <span class="tag">Customer MI</span>
-      </div>
-      <h2 class="card-title">Customer &amp; Revenue Intelligence System</h2>
-      <p class="card-question">Where are customers churning, what drives retention, and how can commercial teams act on it faster?</p>
-      <div class="card-proof">
-        Churn · Funnel analysis · Segmentation · Hypothesis testing · Automation · AI-assisted executive summaries
-      </div>
-      <div class="card-tools">SQL · Power BI · DAX · R · n8n</div>
-      <div class="card-status">
-        <span class="status-dot in-development"></span>
-        In development. Scope defined, build planned.
-      </div>
-      <!-- No button until repo exists -->
-    </div>
-
-  </div>
-</section>
-
-<section class="about" id="about">
-  <h2 class="about-heading">About Catherine</h2>
-  <div class="about-body">
-    <p>I learnt early in fintech sales that a number is never just a number. It could be a campaign that was not working, a client about to leave, or a target the team still had to hit before month end.</p>
-    <p>That is still how I read data. I look for what the number is trying to say about a decision, not just what it is.</p>
-    <p class="about-location">Poole/London · Open to hybrid and remote UK roles</p>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <h2 class="contact-heading">Get in touch</h2>
-  <div class="contact-links">
-    <a href="https://www.linkedin.com/in/catherineechendu" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
-    <span class="contact-separator">·</span>
-    <a href="mailto:catherineechendu.uk@gmail.com" class="contact-link">catherineechendu.uk@gmail.com</a>
-  </div>
-</section>
+</footer>
 ```

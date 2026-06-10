@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - work.qmd
+    - about.qmd
+    - contact.qmd
 
 website:
   title: "Catherine Echendu"
@@ -13,6 +18,7 @@ format:
   html:
     css: styles.css
     theme: none
+    title-prefix: ""
     toc: false
     anchor-sections: false
     smooth-scroll: true

@@ -1,0 +1,103 @@
+﻿---
+title: ""
+pagetitle: "About | Catherine Echendu"
+---
+
+```{=html}
+<nav class="site-nav">
+  <a href="index.html" class="nav-brand">Catherine E.</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="about.html" class="nav-active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="page about">
+
+  <section class="about-top">
+
+    <div class="about-intro">
+      <p class="page-kicker">About</p>
+      <h1 class="page-title">My Journey</h1>
+      <p class="about-hook-text">What keeps pulling me into analytics is the moment a pattern starts explaining a decision. Before I had the formal language for it, I was already doing that work in commercial roles, watching customer behaviour, revenue movement and team performance closely enough to ask, &ldquo;What is this really telling us?&rdquo;</p>
+    </div>
+
+    <section class="journey">
+
+      <div class="stage">
+        <span class="stage-marker"></span>
+        <div class="stage-body">
+          <h2 class="stage-title">Business Development Leader</h2>
+          <p class="stage-meta">FCA-regulated fintech</p>
+          <p class="stage-text">At TigerWit, I used customer and conversion data to drive revenue decisions in an FCA-regulated fintech environment, generating <span class="data">£300k to £600k</span> in monthly revenue against a <span class="data">£75k</span> target. I learned that the most valuable insights are not the numbers themselves, they are the reasons behind them.</p>
+        </div>
+      </div>
+
+      <div class="stage">
+        <span class="stage-marker"></span>
+        <div class="stage-body">
+          <h2 class="stage-title">Business Analytics</h2>
+          <p class="stage-meta">MSc, Bournemouth University &middot; Merit</p>
+          <p class="stage-text">That is why I studied Business Analytics: to put stronger technical methods behind the judgement I had built in practice.</p>
+        </div>
+      </div>
+
+      <div class="stage">
+        <span class="stage-marker"></span>
+        <div class="stage-body">
+          <h2 class="stage-title">Data Analyst <span class="stage-years">7+ years in data-driven roles</span></h2>
+          <p class="stage-meta">SQL &middot; Power BI &middot; R &middot; Business intelligence</p>
+          <p class="stage-text">Now I use SQL, Power BI, R and business intelligence to build clearer answers from customer, revenue and workforce data, including my WERS workforce analytics project (<span class="data">21,981</span> survey responses).</p>
+        </div>
+      </div>
+
+    </section>
+
+  </section>
+
+  <section class="brings">
+      <p class="brings-intro">The work I enjoy most sits in that middle space: listening to what the business is struggling with, finding the evidence underneath it, and turning it into something people can actually use.</p>
+
+      <div class="brings-grid">
+        <div class="bring-card">
+          <h3 class="bring-title">Customer Intelligence</h3>
+          <p class="bring-text">Segmentation, churn, lifecycle and conversion.</p>
+        </div>
+        <div class="bring-card">
+          <h3 class="bring-title">Commercial Analytics</h3>
+          <p class="bring-text">Revenue, campaign ROI, pipeline and affiliate performance.</p>
+        </div>
+        <div class="bring-card">
+          <h3 class="bring-title">SQL &amp; Validation</h3>
+          <p class="bring-text">SQL validation, reconciliation and migration controls, supporting <span class="data">99.9%</span> post-migration data integrity and reducing migration exceptions by <span class="data">36%</span>.</p>
+        </div>
+        <div class="bring-card">
+          <h3 class="bring-title">Power BI &amp; DAX</h3>
+          <p class="bring-text">Dashboards, star schema models and validated MI outputs.</p>
+        </div>
+        <div class="bring-card">
+          <h3 class="bring-title">R &amp; Statistical Modelling</h3>
+          <p class="bring-text">Regression, decision-tree modelling, tidyverse and ggplot2.</p>
+        </div>
+        <div class="bring-card">
+          <h3 class="bring-title">Workforce &amp; People Data</h3>
+          <p class="bring-text">Survey analytics, retention modelling and reward analysis.</p>
+        </div>
+      </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-copy">&copy; 2026 Catherine Echendu &middot; Poole/London</span>
+    <span class="footer-links">
+      <a href="https://www.linkedin.com/in/catherineechendu" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/catherine-echendu" target="_blank" rel="noopener">GitHub</a>
+    </span>
+  </div>
+</footer>
+```
+

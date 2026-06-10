@@ -6,3 +6,11 @@
 *_cache/
 
 **/*.quarto_ipynb
+
+# Internal working files - never publish
+HANDOVER.md
+FIXES-TODO.md
+BACKUPS/
+prep_photo.py
+.claude/
+images/ChatGPT Image*.png
