@@ -144,12 +144,12 @@ a:hover { color: var(--teal-hover); }
 .hero-inner {
   position: relative;
   max-width: 1160px; margin: 0 auto; padding: 36px 0 44px; width: 100%;
-  display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 64px;
+  display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(28px, 5vw, 64px);
   align-items: center;
 }
 .hero-left { min-width: 0; }
 .hero-kicker { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.22em; color: #C4A882; margin-bottom: 16px; }
-.hero-left h1 { font-size: 3.4rem; font-weight: 700; line-height: 1.04; letter-spacing: -0.03em; color: #FFFFFF; }
+.hero-left h1 { font-size: clamp(2.1rem, 4.5vw, 3.4rem); font-weight: 700; line-height: 1.04; letter-spacing: -0.03em; color: #FFFFFF; }
 @media (max-width: 600px) { .hero-left h1 { font-size: 2.2rem; } }
 .hero-hook { font-size: clamp(1.18rem, 2vw, 1.45rem); font-style: italic; color: #E8E0D2; margin: 20px 0 18px; font-weight: 500; line-height: 1.4; }
 .hero-value { font-size: clamp(1rem, 1.5vw, 1.08rem); color: #BFCEC8; max-width: 500px; line-height: 1.72; margin-bottom: 34px; }
@@ -193,10 +193,15 @@ a:hover { color: var(--teal-hover); }
 
 @media (max-width: 860px) {
   .home { min-height: 0; }
+}
+/* Hero stays side-by-side and shrinks; it only stacks on true phone widths */
+@media (max-width: 640px) {
+  .hero { padding: 0; }
   .hero-inner { grid-template-columns: 1fr; gap: 28px; padding: 32px 24px; }
   .hero-right { justify-self: center; max-width: 380px; }
 }
-@media (max-width: 460px) {
+/* In the squeezed range the signal card stacks its three items so no metric is clipped */
+@media (max-width: 900px) {
   .signal-card { grid-template-columns: 1fr; }
   .signal-item { border-right: none; border-bottom: 1px solid var(--line-soft); }
   .signal-item:last-child { border-bottom: none; }
@@ -310,6 +315,11 @@ a:hover { color: var(--teal-hover); }
 .case-note { display: block; font-size: 0.74rem; font-style: italic; color: var(--ink-muted); margin-top: 8px; line-height: 1.35; }
 @media (max-width: 860px) {
   .cases { grid-template-columns: 1fr; padding: 16px 24px 28px; }
+  /* When the cards stack, switch off the desktop-only positioning offsets */
+  .case-card:first-child { margin-right: 0; }
+  .case-card:last-child { margin-top: 0; left: 0; margin-left: 0; margin-right: 0; min-height: 0; }
+  /* Let the room photo crop naturally instead of squashing at narrow widths */
+  .page.work { background-size: cover; }
 }
 @media (max-width: 720px) {
   .cases { padding: 24px 24px 64px; }
