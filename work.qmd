@@ -138,8 +138,6 @@ pagetitle: "Work | Catherine Echendu"
       </div>
     </div>
   </section>
-    </div>
-  </section>
 </main>
 
 <footer class="site-footer">
