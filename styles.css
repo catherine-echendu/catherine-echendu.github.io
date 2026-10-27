@@ -497,3 +497,20 @@ a:hover { color: var(--teal-hover); }
     gap: 32px;
   }
 }
+
+
+/* ═══════════ FINAL HEIGHT FIT · HOME SIGNAL AND ABOUT JOURNEY ═══════════ */
+/* Shorten only the panel under the Home portrait. */
+.signal-item {
+  grid-template-columns: minmax(96px, 0.55fr) minmax(0, 1.45fr);
+  gap: 7px;
+  padding: 4px 9px;
+}
+.signal-value { font-size: 0.66rem; line-height: 1.22; }
+.signal-value .data, .signal-value.data { font-size: 0.65rem; }
+
+/* Raise only the About journey, preserving all wording and the left intro. */
+@media (min-width: 901px) {
+  .journey { transform: translateY(-14px); }
+  .stage { padding-bottom: 18px; }
+}
