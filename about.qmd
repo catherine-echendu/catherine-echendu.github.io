@@ -21,7 +21,7 @@ pagetitle: "About | Catherine Echendu"
     <div class="about-intro">
       <p class="page-kicker">About</p>
       <h1 class="page-title">My Journey</h1>
-      <p class="about-hook-text">What keeps pulling me into analytics is the moment a pattern starts explaining a decision. Before I had the formal language for it, I was already doing that work in commercial roles, watching customer behaviour, revenue movement and team performance closely enough to ask, &ldquo;What is this really telling us?&rdquo;</p>
+      <p class="about-hook-text">I’m drawn to the moment a pattern starts to explain a decision. Before studying analytics formally, I was already using customer behaviour, revenue and team performance in commercial roles to ask a practical question: what is the evidence telling me?</p>
     </div>
 
     <section class="journey">
@@ -31,7 +31,7 @@ pagetitle: "About | Catherine Echendu"
         <div class="stage-body">
           <h2 class="stage-title">Commercial leadership and judgement</h2>
           <p class="stage-meta">TigerWit · Business Development Manager</p>
-          <p class="stage-text">At TigerWit, I used customer, CRM and conversion information to guide acquisition, follow-up and revenue decisions. I also led a five-person team and improved sales KPI results by <span class="data">40%</span>. That work taught me to look beyond activity counts and ask which signals reflected meaningful customer engagement and business performance.</p>
+          <p class="stage-text">At TigerWit, I used customer, CRM and conversion information to guide acquisition and revenue decisions. I led a five-person team and improved sales KPI results by <span class="data">40%</span>. I learned to look beyond activity counts and ask what they revealed about customer engagement and business performance.</p>
         </div>
       </div>
 
@@ -40,16 +40,16 @@ pagetitle: "About | Catherine Echendu"
         <div class="stage-body">
           <h2 class="stage-title">Business Analytics</h2>
           <p class="stage-meta">MSc Management with Business Analytics · Bournemouth University · Merit</p>
-          <p class="stage-text">I completed the MSc to add stronger analytical methods to the commercial judgement I had developed in practice—from asking better business questions through to testing results and explaining what the evidence can and cannot support.</p>
+          <p class="stage-text">I completed my MSc to add stronger analytical methods to the commercial judgement I had developed in practice. I learned to test results carefully and explain what the evidence can, and cannot, support.</p>
         </div>
       </div>
 
       <div class="stage">
         <span class="stage-marker"></span>
         <div class="stage-body">
-          <h2 class="stage-title">Analytics in practice <span class="stage-years">7+ years across commercial and operational roles</span></h2>
-          <p class="stage-meta">SQL · Power BI · Excel · R</p>
-          <p class="stage-text">I apply SQL, Power BI, Excel and R to structure questions, validate results and communicate what the evidence supports. My WERS project is one example: a survey-based investigation of reward and workplace factors associated with job satisfaction, with findings and limitations made explicit.</p>
+          <h2 class="stage-title">Analytics in practice</h2>
+          <p class="stage-meta">7+ years across commercial and operational roles<br />SQL · Power BI · Excel · R</p>
+          <p class="stage-text">I use SQL, Power BI, Excel and R to structure questions, validate results and communicate evidence. My WERS project examines how reward and workplace factors are associated with job satisfaction, while making limitations clear.</p>
         </div>
       </div>
 
@@ -71,7 +71,7 @@ pagetitle: "About | Catherine Echendu"
         </div>
         <div class="bring-card">
           <h3 class="bring-title">SQL &amp; Validation</h3>
-          <p class="bring-text">Reconciliation, data-quality investigation and cross-tool checks. In my WERS project, 22 independent SQL validation checks passed, with a maximum R–SQL difference of <span class="data">0.005</span>.</p>
+          <p class="bring-text">Reconciliation, data-quality investigation and cross-tool checks. In my WERS project, 22 independent SQL validation checks passed, with a maximum difference between R and SQL of <span class="data">0.005</span>.</p>
         </div>
         <div class="bring-card">
           <h3 class="bring-title">Power BI &amp; DAX</h3>
