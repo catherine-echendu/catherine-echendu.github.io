@@ -410,3 +410,39 @@ a:hover { color: var(--teal-hover); }
   .contact-left { margin-left: 0; margin-right: 0; padding: 0 24px; max-width: 560px; }
   .contact-footer { padding: 12px 24px; }
 }
+
+
+/* ═══════════ PORTFOLIO LAYOUT REPAIRS · OCT 2026 ═══════════ */
+/* Keep proof-card content aligned and make metric contrast accessible on dark green. */
+.proof-card { align-items: flex-start; }
+.proof-ico { margin-top: 2px; }
+.proof-body { gap: 5px; }
+.proof-sub { color: #D1DDD8; font-size: 0.78rem; line-height: 1.4; }
+.proof-card .data {
+  color: #F1D5A7;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+/* Fit the About journey into the first viewport without shrinking the second section. */
+@media (min-width: 901px) {
+  .about-top {
+    padding: 28px 48px 28px;
+    gap: clamp(26px, 3.2vw, 44px);
+  }
+  .about-intro .page-title { margin-bottom: 16px; }
+  .about-hook-text { font-size: 1rem; line-height: 1.48; }
+  .stage { padding-bottom: 16px; }
+  .stage-title { font-size: 1rem; line-height: 1.2; }
+  .stage-meta { font-size: 0.66rem; line-height: 1.35; margin: 3px 0 6px; }
+  .stage-text { font-size: 0.86rem; line-height: 1.45; }
+}
+@media (min-width: 901px) and (max-height: 820px) {
+  .about-top { padding-top: 16px; padding-bottom: 16px; gap: 24px; }
+  .about-intro .page-title { font-size: 2.2rem; margin-bottom: 12px; }
+  .about-hook-text { font-size: 0.94rem; line-height: 1.42; }
+  .stage { padding-bottom: 11px; }
+  .stage-meta { font-size: 0.62rem; margin: 2px 0 5px; }
+  .stage-text { font-size: 0.82rem; line-height: 1.38; }
+}
