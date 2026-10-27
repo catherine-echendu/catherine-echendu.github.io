@@ -690,55 +690,264 @@ a:hover { color: var(--teal-hover); }
 }
 
 
-/* Contact page: rebalance horizontal placement and add deliberate breathing room. */
-.contact-inner {
-  height: auto;
-  min-height: calc(100vh - 64px - 52px);
-  padding: clamp(56px, 8vh, 92px) 0;
+/* Work page: align the three decision stages to deliberate desktop viewport sections. */
+.work-visual #work-top {
+  min-height: calc(100svh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.contact-left {
-  max-width: 540px;
-  margin-left: clamp(40px, 16vw, 245px);
+.work-visual #work-top .workv-intro { padding: 25px 0 19px; }
+.work-visual #work-top .workv-scrollhint { padding-top: 15px; padding-bottom: 20px; }
+.work-visual .workv-walk {
+  min-height: calc(100svh - 64px);
+  padding: clamp(32px, 5vh, 56px) 0;
+  display: flex;
+  align-items: center;
 }
-.contact-left .page-kicker {
-  margin-bottom: 22px;
+.work-visual .workv-walk .workv-shell {
+  width: 100%;
+  min-height: calc(100svh - 64px - 2 * clamp(32px, 5vh, 56px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.work-visual .workv-walk-title { margin-top: 8px; }
+.work-visual .workv-steps { margin-top: 23px; gap: 14px; }
+.work-visual .workv-step { min-height: 0; }
+
+/* Final viewport: actions, validation and data caveat grouped into a quiet, readable finish. */
+.work-visual .workv-next {
+  min-height: calc(100svh - 64px);
+  box-sizing: border-box;
+  padding: clamp(32px, 5vh, 56px) 0;
+  background: #f1eee7;
+  color: #182723;
+  display: flex;
+  align-items: center;
+}
+.work-visual .workv-next .workv-shell {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.work-visual .workv-next .workv-kicker { color: #9b784b; margin-bottom: 8px; }
+.work-visual .workv-next-title {
+  margin: 0;
+  color: #163d36;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.05;
+  letter-spacing: -.05em;
+}
+.work-visual .workv-next-intro {
+  max-width: 720px;
+  margin: 10px 0 0;
+  color: #61736c;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+.work-visual .workv-next .workv-decision {
+  display: block;
+  margin-top: 22px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+.work-visual .workv-next .workv-actions3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.work-visual .workv-final-meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr);
+  gap: 14px;
+  margin-top: 17px;
+}
+.work-visual .workv-evidence-quality,
+.work-visual .workv-data-note {
+  min-width: 0;
+  border-radius: 13px;
+  padding: 15px 17px;
+}
+.work-visual .workv-evidence-quality {
+  background: #163d36;
+  color: #d9e4df;
+}
+.work-visual .workv-data-note {
+  background: #fff;
+  color: #61736c;
+  border: 1px solid #e3e0d8;
+  border-left: 4px solid #c4a882;
+}
+.work-visual .workv-note-label {
+  margin: 0 0 7px;
+  font-size: .62rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .13em;
+  color: #c4a882;
+}
+.work-visual .workv-data-note .workv-note-label { color: #9b784b; }
+.work-visual .workv-evidence-quality p:not(.workv-note-label),
+.work-visual .workv-data-note p:not(.workv-note-label) {
+  margin: 0;
+  font-size: .69rem;
+  line-height: 1.45;
+}
+.work-visual .workv-evidence-quality p + p { margin-top: 6px !important; }
+.work-visual .workv-evidence-quality p strong { color: #fff; }
+.work-visual .workv-next .workv-walk-actions {
+  margin-top: 15px;
+  justify-content: flex-end;
+}
+.work-visual .workv-next .workv-walk-actions .workv-btn { padding: 10px 14px; }
+
+/* Compact desktop layout for short browser viewports, including scaled Windows displays. */
+@media (min-width: 1101px) and (max-height: 720px) {
+  .work-visual #work-top { height: calc(100svh - 64px); min-height: 0; }
+  .work-visual #work-top .workv-intro {
+    grid-template-columns: minmax(0, 1fr) minmax(250px, 390px);
+    gap: 25px;
+    padding: 10px 0 10px;
+  }
+  .work-visual #work-top .workv-kicker { font-size: .62rem; margin-bottom: 5px; }
+  .work-visual #work-top .workv-title { font-size: clamp(1.9rem, 3vw, 2.7rem); }
+  .work-visual #work-top .workv-intro-copy { font-size: .82rem; line-height: 1.4; }
+  .work-visual #work-top .workv-feature { flex: 1 1 auto; min-height: 0; }
+  .work-visual #work-top .workv-copy { padding: 18px 22px; }
+  .work-visual #work-top .workv-pill { padding: 5px 8px; font-size: .58rem; }
+  .work-visual #work-top .workv-copy h2 { margin: 14px 0 11px; font-size: clamp(1.5rem, 2.25vw, 2.05rem); }
+  .work-visual #work-top .workv-question-label { font-size: .58rem; margin-bottom: 5px; }
+  .work-visual #work-top .workv-question { font-size: .85rem; line-height: 1.4; }
+  .work-visual #work-top .workv-tools { margin-top: 11px; font-size: .72rem; }
+  .work-visual #work-top .workv-actions { padding-top: 12px; gap: 8px; }
+  .work-visual #work-top .workv-btn { padding: 9px 11px; font-size: .7rem; }
+  .work-visual #work-top .workv-visual { padding: 10px; }
+  .work-visual #work-top .workv-dashbar { padding: 10px 13px; }
+  .work-visual #work-top .workv-dashbar strong { font-size: .78rem; }
+  .work-visual #work-top .workv-dashbar span { font-size: .55rem; }
+  .work-visual #work-top .workv-dashinner { padding: 8px; gap: 7px; }
+  .work-visual #work-top .workv-metrics { gap: 6px; }
+  .work-visual #work-top .workv-metric { padding: 7px 8px; }
+  .work-visual #work-top .workv-lab { font-size: .53rem; }
+  .work-visual #work-top .workv-metric strong { margin: 3px 0 1px; font-size: clamp(1rem, 1.45vw, 1.35rem); }
+  .work-visual #work-top .workv-foot { font-size: .5rem; }
+  .work-visual #work-top .workv-vizgrid { gap: 7px; }
+  .work-visual #work-top .workv-panel { padding: 8px; }
+  .work-visual #work-top .workv-panelhead { margin-bottom: 6px; }
+  .work-visual #work-top .workv-panelhead strong { font-size: .65rem; }
+  .work-visual #work-top .workv-panelhead span { font-size: .51rem; }
+  .work-visual #work-top .workv-bars { gap: 5px; }
+  .work-visual #work-top .workv-barrow { grid-template-columns: 58px minmax(0, 1fr) 28px; gap: 5px; font-size: .53rem; }
+  .work-visual #work-top .workv-track { height: 6px; }
+  .work-visual #work-top .workv-barrow b { font-size: .54rem; }
+  .work-visual #work-top .workv-insights { gap: 5px; }
+  .work-visual #work-top .workv-mini { min-height: 52px; padding: 6px 8px; }
+  .work-visual #work-top .workv-mini strong { font-size: 1.2rem; }
+  .work-visual #work-top .workv-mini span { font-size: .52rem; line-height: 1.28; }
+  .work-visual #work-top .workv-quality { padding: 6px 8px; font-size: .52rem; }
+  .work-visual #work-top .workv-quality strong { font-size: .53rem; }
+  .work-visual #work-top .workv-scrollhint { padding: 8px 0 9px; font-size: .58rem; }
+  .work-visual #work-top .workv-scrollhint span { width: 19px; height: 19px; }
+
+  .work-visual .workv-walk { padding: 24px 0; }
+  .work-visual .workv-walk .workv-shell { min-height: calc(100svh - 112px); }
+  .work-visual .workv-walk-title { font-size: 2rem; margin: 6px 0 7px; }
+  .work-visual .workv-walk-sub { font-size: .78rem; line-height: 1.4; }
+  .work-visual .workv-steps { margin-top: 14px; gap: 10px; }
+  .work-visual .workv-step { padding: 13px; border-radius: 13px; }
+  .work-visual .workv-stephead { margin-bottom: 10px; gap: 8px; }
+  .work-visual .workv-stepnum { flex-basis: 24px; width: 24px; height: 24px; font-size: .65rem; }
+  .work-visual .workv-stephead strong { font-size: .75rem; }
+  .work-visual .workv-stephead small { font-size: .58rem; }
+  .work-visual .workv-bigfind { margin-bottom: 8px; gap: 7px; }
+  .work-visual .workv-bigfind strong { font-size: 2rem; }
+  .work-visual .workv-bigfind span { font-size: .6rem; }
+  .work-visual .workv-walkbars { gap: 5px; }
+  .work-visual .workv-walkrow { grid-template-columns: 72px minmax(0, 1fr) 28px; gap: 5px; font-size: .56rem; }
+  .work-visual .workv-walktrack { height: 7px; }
+  .work-visual .workv-walkrow b { font-size: .58rem; }
+  .work-visual .workv-stepnote { margin-top: 9px; font-size: .62rem; }
+  .work-visual .workv-insightnum { margin: 6px 0; font-size: 2.45rem; }
+  .work-visual .workv-insighttext { font-size: .71rem; line-height: 1.4; }
+  .work-visual .workv-inset { margin-top: 10px; padding: 9px; font-size: .61rem; }
+  .work-visual .workv-next { padding: 24px 0; }
+  .work-visual .workv-next .workv-kicker { margin-bottom: 5px; font-size: .62rem; }
+  .work-visual .workv-next-title { font-size: 2rem; }
+  .work-visual .workv-next-intro { margin-top: 6px; font-size: .78rem; }
+  .work-visual .workv-next .workv-decision { margin-top: 14px; }
+  .work-visual .workv-act { padding: 10px; gap: 8px; }
+  .work-visual .workv-act strong { font-size: .67rem; }
+  .work-visual .workv-act span:not(.workv-acticon) { font-size: .58rem; }
+  .work-visual .workv-final-meta { margin-top: 12px; gap: 10px; }
+  .work-visual .workv-evidence-quality,
+  .work-visual .workv-data-note { padding: 11px 13px; }
+  .work-visual .workv-evidence-quality p:not(.workv-note-label),
+  .work-visual .workv-data-note p:not(.workv-note-label) { font-size: .61rem; line-height: 1.37; }
+  .work-visual .workv-note-label { margin-bottom: 5px; font-size: .57rem; }
+  .work-visual .workv-next .workv-walk-actions { margin-top: 10px; }
+  .work-visual .workv-next .workv-walk-actions .workv-btn { padding: 8px 11px; font-size: .68rem; }
+}
+@media (min-width: 1101px) and (max-height: 600px) {
+  .work-visual #work-top .workv-intro { padding-top: 4px; padding-bottom: 5px; }
+  .work-visual #work-top .workv-copy { padding-top: 12px; padding-bottom: 12px; }
+  .work-visual #work-top .workv-copy h2 { margin-top: 10px; }
+  .work-visual #work-top .workv-visual { padding: 7px; }
+  .work-visual #work-top .workv-dashinner { padding: 6px; gap: 5px; }
+  .work-visual #work-top .workv-bars { gap: 3px; }
+  .work-visual #work-top .workv-mini { min-height: 45px; }
+  .work-visual #work-top .workv-scrollhint { padding: 4px 0; }
+}
+
+/* Contact page: restore the single-viewport layout with only a modest spacing adjustment. */
+.page.contact .contact-inner {
+  height: calc(100svh - 64px - 52px);
+  min-height: 0;
+  padding: 0;
+}
+.page.contact .contact-left {
+  max-width: 480px;
+  margin-left: clamp(40px, 22vw, 330px);
+}
+.page.contact .contact-left .page-kicker {
+  margin-bottom: 15px;
   letter-spacing: .18em;
 }
-.contact-title {
-  font-size: clamp(1.85rem, 2.2vw, 2.1rem);
-  line-height: 1.16;
+.page.contact .contact-title {
+  max-width: 470px;
+  margin-bottom: 16px;
+  line-height: 1.15;
+}
+.page.contact .contact-lead {
+  max-width: 405px;
+  font-size: .9rem;
+  line-height: 1.55;
   margin-bottom: 20px;
-  max-width: 480px;
 }
-.contact-lead {
-  max-width: 460px;
-  font-size: .93rem;
-  line-height: 1.65;
-  margin-bottom: 24px;
-}
-.contact-cta {
-  margin-bottom: 26px;
-}
-.contact-list { gap: 12px; }
+.page.contact .contact-cta { margin-bottom: 20px; }
+.page.contact .contact-list { gap: 10px; }
+
 @media (max-width: 820px) {
-  .contact-inner {
-    min-height: calc(100vh - 64px - 52px);
-    padding: 54px 0;
+  .page.contact .contact-inner {
+    height: auto;
+    min-height: calc(100svh - 64px - 52px);
+    padding: 22px 0;
   }
-  .contact-left {
+  .page.contact .contact-left {
     max-width: 560px;
     margin-left: 0;
     margin-right: 0;
     padding: 0 24px;
   }
-  .contact-title { max-width: 100%; }
-  .contact-lead { max-width: 500px; }
+  .page.contact .contact-title { max-width: 100%; }
+  .page.contact .contact-lead { max-width: 500px; }
 }
 @media (max-width: 480px) {
-  .contact-inner { padding: 42px 0; }
-  .contact-left { padding: 0 20px; }
-  .contact-left .page-kicker { margin-bottom: 18px; }
-  .contact-title { font-size: 1.8rem; }
-  .contact-lead { font-size: .9rem; line-height: 1.6; }
-  .contact-cta { margin-bottom: 24px; }
+  .page.contact .contact-inner { padding: 20px 0; }
+  .page.contact .contact-left { padding: 0 20px; }
+  .page.contact .contact-left .page-kicker { margin-bottom: 13px; }
+  .page.contact .contact-title { font-size: 1.8rem; margin-bottom: 14px; }
+  .page.contact .contact-lead { font-size: .88rem; line-height: 1.5; margin-bottom: 18px; }
+  .page.contact .contact-cta { margin-bottom: 18px; }
+  .page.contact .contact-list { gap: 8px; }
 }
