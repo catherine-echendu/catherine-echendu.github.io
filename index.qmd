@@ -35,16 +35,16 @@ pagetitle: "Catherine Echendu | Business Signal & Decision Support"
         </div>
         <div class="signal-card">
           <div class="signal-item">
-            <span class="signal-label">People data</span>
-            <span class="signal-value"><span class="data">21,981</span> employee responses analysed</span>
+            <span class="signal-label">Team leadership</span>
+            <span class="signal-value"><span class="data">5-person team</span><br />Sales KPI results <span class="data">+40%</span></span>
           </div>
           <div class="signal-item">
-            <span class="signal-label">Commercial pressure</span>
-            <span class="signal-value"><span class="data">£300k to £600k</span> monthly revenue against <span class="data">£75k</span> target</span>
+            <span class="signal-label">CRM-informed performance</span>
+            <span class="signal-value"><span class="data">£300k–£600k</span> personal monthly revenue<br />vs <span class="data">£75k</span> monthly target</span>
           </div>
           <div class="signal-item">
-            <span class="signal-label">Decision impact</span>
-            <span class="signal-impact"><span class="impact-line">SLA breaches down from <span class="data">8 to 3</span></span><span class="impact-line">Reporting errors cut <span class="data">35%</span></span></span>
+            <span class="signal-label">Business judgement</span>
+            <span class="signal-value">Recommended against market entry<br /><span class="data">Integrity over faster payback</span></span>
           </div>
           <!-- Future enhancement: optional "Let me walk you through the work" video CTA linking to a project walkthrough once a real video exists. -->
         </div>
@@ -80,28 +80,28 @@ pagetitle: "Catherine Echendu | Business Signal & Decision Support"
           <span class="proof-ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 6.2A3.6 3.6 0 0 0 9.5 8v3.5"/><path d="M7 11.5h7"/><path d="M7 18h10"/><path d="M9.5 11.5V15c0 1.4-.6 2.3-1.7 3"/></svg>
           </span>
-          <span class="proof-body"><span class="proof-main">Revenue ownership</span><span class="proof-sub">£300k to £600k monthly</span><span class="proof-sub">against £75k target</span></span>
+          <span class="proof-body"><span class="proof-main">TigerWit Africa · 2020</span><span class="proof-sub">Highest Introducing Broker sign-ups</span><span class="proof-sub">and client retention</span></span>
         </div>
 
         <div class="proof-card">
           <span class="proof-ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V5z"/><path d="m9 12 2 2 4-4"/></svg>
           </span>
-          <span class="proof-body"><span class="proof-main">FCA-regulated</span><span class="proof-sub">Fintech experience</span></span>
+          <span class="proof-body"><span class="proof-main">Affiliate performance</span><span class="proof-sub">Affiliate ROI <span class="data">+22%</span></span><span class="proof-sub">Sales <span class="data">+40%</span> on a £750k-equivalent budget</span></span>
         </div>
 
         <div class="proof-card">
           <span class="proof-ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="13" width="3.6" height="7" rx="1"/><rect x="10.2" y="9" width="3.6" height="11" rx="1"/><rect x="16.4" y="4" width="3.6" height="16" rx="1"/></svg>
           </span>
-          <span class="proof-body"><span class="proof-main">Evidence stack</span><span class="proof-sub">Power BI · SQL</span><span class="proof-sub">Excel · R</span></span>
+          <span class="proof-body"><span class="proof-main">Client &amp; trader development</span><span class="proof-sub">Client relationships and new business</span><span class="proof-sub">Trader engagement, education and seminars</span></span>
         </div>
 
         <div class="proof-card">
           <span class="proof-ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 21 8H3z"/><path d="M4 21h16"/><path d="M5 21V10"/><path d="M9.5 21V10"/><path d="M14.5 21V10"/><path d="M19 21V10"/></svg>
           </span>
-          <span class="proof-body"><span class="proof-main">Public sector operations</span><span class="proof-sub">Handling time down 25%</span><span class="proof-sub">First-call resolution up 30%</span></span>
+          <span class="proof-body"><span class="proof-main">Public sector operations</span><span class="proof-sub">100% QA on monitored cases</span><span class="proof-sub">Team QA +18% over 3 months</span></span>
         </div>
 
       </div>
