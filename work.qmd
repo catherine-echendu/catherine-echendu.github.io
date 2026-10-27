@@ -108,11 +108,12 @@ pagetitle: "Work | Catherine Echendu"
 
   <section class="workv-next" id="decision">
     <div class="workv-shell">
-      <p class="workv-kicker">Decision support · Practical next steps</p>
-      <h2 class="workv-next-title">What could a team do next?</h2>
-      <p class="workv-next-intro">The analysis helps prioritise what to investigate. It does not prove which intervention will cause satisfaction to improve.</p>
-
       <section class="workv-decision" aria-label="Practical next steps">
+        <div class="workv-decision-intro">
+          <p class="workv-kicker">Decision support · Practical next steps</p>
+          <h2 class="workv-next-title">What could a team do next?</h2>
+          <p class="workv-next-intro">The analysis helps prioritise what to investigate. It does not prove which intervention will cause satisfaction to improve.</p>
+        </div>
         <div class="workv-actions3">
           <div class="workv-act"><span class="workv-acticon">1</span><div><strong>Investigate pay experience</strong><span>Review fairness, communication and employee feedback alongside pay levels.</span></div></div>
           <div class="workv-act"><span class="workv-acticon">2</span><div><strong>Test training priorities</strong><span>Evaluate targeted training options against budget and current workforce needs.</span></div></div>
@@ -122,12 +123,15 @@ pagetitle: "Work | Catherine Echendu"
 
       <div class="workv-final-meta">
         <section class="workv-evidence-quality">
-          <p class="workv-note-label">Evidence quality</p>
-          <p><strong>22/22 independent SQL checks passed</strong>, with a maximum R to SQL difference of 0.005.</p>
-          <p>WERS is observational: association does not establish causation. The identified segment is a group-level signal, not an individual diagnosis. Flexitime missingness was 10.9% and job-sharing missingness was 17.5%, so those measures need particular caution.</p>
+          <div class="workv-evidence-copy">
+            <p class="workv-note-label">Evidence quality</p>
+            <p><strong>22/22 independent SQL checks passed</strong>, with a maximum R to SQL difference of 0.005.</p>
+            <p>WERS is observational: association does not establish causation. The identified segment is a group-level signal, not an individual diagnosis. Flexitime missingness was 10.9% and job-sharing missingness was 17.5%, so those measures need particular caution.</p>
+          </div>
+          <strong class="workv-evidence-stat">3.65 / 5 · 21,784 valid records</strong>
         </section>
         <aside class="workv-data-note">
-          <p class="workv-note-label">Data note</p>
+          <p class="workv-note-label">Historical data</p>
           <p>WERS data were collected in 2011, so they are historical evidence rather than a forecast of today’s workforce. The repository shares code, documentation and aggregated outputs, not restricted source microdata.</p>
         </aside>
       </div>

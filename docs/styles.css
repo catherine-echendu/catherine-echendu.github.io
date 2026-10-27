@@ -635,6 +635,9 @@ a:hover { color: var(--teal-hover); }
 .work-visual .workv-walk-actions .workv-btn { font-size: .76rem; }
 .work-visual .workv-disclosure { margin: 14px 0 0; color: #c0d0c8; font-size: .67rem; line-height: 1.45; }
 @media (max-width: 1100px) {
+  .work-visual .workv-next .workv-decision { grid-template-columns: 1fr; min-height: 0; }
+  .work-visual .workv-next .workv-next-intro { max-width: 700px; }
+  .work-visual .workv-next .workv-evidence-stat { max-width: 170px; }
   .work-visual .workv-feature { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); }
   .work-visual .workv-copy { padding: 30px 24px; }
   .work-visual .workv-visual { padding: 15px; }
@@ -647,6 +650,9 @@ a:hover { color: var(--teal-hover); }
   .work-visual .workv-decision { grid-template-columns: 1fr; }
 }
 @media (max-width: 820px) {
+  .work-visual .workv-next .workv-final-meta { grid-template-columns: 1fr; }
+  .work-visual .workv-next .workv-evidence-quality { align-items: flex-start; flex-direction: column; }
+  .work-visual .workv-next .workv-evidence-stat { max-width: none; text-align: left; }
   .work-visual .workv-intro { grid-template-columns: 1fr; gap: 12px; align-items: start; padding: 28px 0 22px; }
   .work-visual .workv-intro-copy { max-width: 700px; }
   .work-visual .workv-feature { grid-template-columns: 1fr; }
@@ -763,19 +769,60 @@ a:hover { color: var(--teal-hover); }
   line-height: 1.5;
 }
 .work-visual .workv-next .workv-decision {
-  display: block;
-  margin-top: 22px;
-  padding: 0;
-  background: transparent;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  align-items: center;
+  gap: 20px;
+  min-height: 164px;
+  margin-top: 0;
+  padding: 22px;
+  background: #f5f2eb;
   border: 0;
-  border-radius: 0;
+  border-radius: 18px;
+  color: #182723;
+}
+.work-visual .workv-next .workv-decision-intro { min-width: 0; }
+.work-visual .workv-next .workv-decision-intro .workv-kicker {
+  margin: 0 0 7px;
+  font-size: .58rem;
+  letter-spacing: .14em;
+}
+.work-visual .workv-next .workv-next-title {
+  margin: 0;
+  color: #163d36;
+  font-size: clamp(1.15rem, 1.45vw, 1.38rem);
+  line-height: 1.07;
+  letter-spacing: -.035em;
+}
+.work-visual .workv-next .workv-next-intro {
+  max-width: 260px;
+  margin: 8px 0 0;
+  color: #61736c;
+  font-size: .72rem;
+  line-height: 1.43;
 }
 .work-visual .workv-next .workv-actions3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .work-visual .workv-final-meta {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(270px, .8fr);
   gap: 14px;
-  margin-top: 17px;
+  margin-top: 15px;
+}
+.work-visual .workv-evidence-quality {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.work-visual .workv-evidence-copy { min-width: 0; flex: 1 1 auto; }
+.work-visual .workv-evidence-stat {
+  flex: 0 0 auto;
+  max-width: 190px;
+  color: #f1d5a7;
+  font-size: .72rem;
+  line-height: 1.35;
+  font-weight: 800;
+  text-align: right;
 }
 .work-visual .workv-evidence-quality,
 .work-visual .workv-data-note {
@@ -818,7 +865,7 @@ a:hover { color: var(--teal-hover); }
 .work-visual .workv-next .workv-walk-actions .workv-btn { padding: 10px 14px; }
 
 /* Compact desktop layout for short browser viewports, including scaled Windows displays. */
-@media (min-width: 1101px) and (max-height: 800px) {
+@media (min-width: 1101px) and (max-height: 720px) {
   .work-visual #work-top { height: calc(100svh - 64px); min-height: 0; }
   .work-visual #work-top .workv-intro {
     grid-template-columns: minmax(0, 1fr) minmax(250px, 390px);
@@ -934,39 +981,43 @@ a:hover { color: var(--teal-hover); }
     min-height: 0;
   }
   .work-visual .workv-next {
-    height: calc(100svh - 64px);
+    height: calc(100svh - 64px - 52px);
     min-height: 0;
+    padding: clamp(24px, 3vh, 34px) 0;
   }
-  /* The three panels already provide the complete Work journey; avoid a fourth mini-scroll for duplicate footer links. */
-  .work-visual + .site-footer { display: none; }
+  /* Keep the site's normal footer visible at the base of the third viewport. */
+  .work-visual + .site-footer .footer-inner {
+    min-height: 52px;
+    padding: 10px clamp(20px, 5vw, 72px);
+  }
 }
 
-/* Contact: one steady desktop page, with its earlier horizontal placement restored. */
+/* Contact: one steady desktop viewport including the restored footer. */
 .page.contact .contact-inner {
-  height: calc(100svh - 64px);
+  height: calc(100svh - 64px - 52px);
   min-height: 0;
-  padding: 14px 0;
+  padding: 12px 0;
 }
 .page.contact .contact-left {
-  max-width: 480px;
-  margin-left: clamp(40px, 26vw, 400px);
+  max-width: 560px;
+  margin-left: clamp(40px, 24vw, 380px);
 }
 .page.contact .contact-left .page-kicker {
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   letter-spacing: .18em;
 }
 .page.contact .contact-title {
-  max-width: 470px;
-  margin-bottom: 13px;
-  line-height: 1.13;
+  max-width: 540px;
+  margin-bottom: 12px;
+  line-height: 1.12;
 }
 .page.contact .contact-lead {
-  max-width: 420px;
+  max-width: 540px;
   font-size: .9rem;
-  line-height: 1.5;
-  margin-bottom: 16px;
+  line-height: 1.48;
+  margin-bottom: 14px;
 }
-.page.contact .contact-cta { margin-bottom: 16px; }
+.page.contact .contact-cta { margin-bottom: 14px; }
 .page.contact .contact-list { gap: 8px; }
 .page.contact .contact-ico { width: 32px; height: 32px; }
 
