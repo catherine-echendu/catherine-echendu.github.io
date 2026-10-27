@@ -14,108 +14,111 @@ pagetitle: "Work | Catherine Echendu"
   </ul>
 </nav>
 
-<main class="page work">
-
-  <header class="page-head">
-    <p class="page-kicker">Selected builds</p>
-    <h1 class="page-title">Work I can talk through</h1>
-    <p class="page-lead">The problem, the evidence, and the decision it supports.</p>
-  </header>
-
-  <section class="cases">
-
-    <article class="case-card">
-      <div class="case-top">
-        <div class="case-tags">
-          <span class="tag">Workforce Analytics</span>
-          <span class="tag">People Data</span>
-          <span class="tag">Survey Methodology</span>
-        </div>
-        <span class="case-status"><span class="status-dot complete"></span>Complete. Modelling, SQL validation, Power BI dashboard and advisory report delivered.</span>
+<main class="page work work-visual">
+  <section class="workv-shell" id="work-top">
+    <header class="workv-intro">
+      <div>
+        <p class="workv-kicker">Selected work · Workforce analytics</p>
+        <h1 class="workv-title">Work I can talk through</h1>
       </div>
+      <p class="workv-intro-copy">A visual look at the business question, the strongest evidence, and what a decision-maker could do next.</p>
+    </header>
 
-      <h2 class="case-title">Workforce Reward &amp; Job Satisfaction Analysis</h2>
-
-      <p class="case-question">Which reward and workplace factors are associated with job satisfaction, and how can employers use the evidence to prioritise action within budget constraints?</p>
-
-      <div class="case-grid">
-        <div class="case-block case-block-wide">
-          <span class="case-block-label">Evidence</span>
-          <p class="case-block-body data">21,981 WERS responses · 21,784 valid job-satisfaction records · Weighted analysis · Regression · Decision-tree sensitivity check · 22 SQL checks · 4-page Power BI dashboard · Advisory report</p>
-        </div>
-        <div class="case-block">
-          <span class="case-block-label">Stack</span>
-          <p class="case-block-body data">R · SQL · Power BI · Excel</p>
-          <a href="https://github.com/catherine-echendu/workforce-reward-satisfaction-analysis" class="btn btn-primary btn-sm case-cta" target="_blank" rel="noopener">View on GitHub</a>
-          <a href="https://github.com/catherine-echendu/workforce-reward-satisfaction-analysis/blob/main/05_powerbi/wers_reward_satisfaction_dashboard.pdf" class="btn btn-ghost btn-sm case-cta" target="_blank" rel="noopener">View dashboard PDF</a>
+    <article class="workv-feature">
+      <div class="workv-copy">
+        <div class="workv-pills"><span class="workv-pill">Completed project</span><span class="workv-pill workv-pill-gold">WERS 2011</span></div>
+        <h2>Workforce Reward &amp; Job Satisfaction Analysis</h2>
+        <p class="workv-question-label">The business question</p>
+        <p class="workv-question">Which reward and workplace factors are associated with job satisfaction, and where should a constrained budget focus first?</p>
+        <p class="workv-tools">R · SQL · Power BI · Excel</p>
+        <div class="workv-actions">
+          <a class="workv-btn workv-btn-primary" href="https://github.com/catherine-echendu/workforce-reward-satisfaction-analysis/blob/main/05_powerbi/wers_reward_satisfaction_dashboard.pdf" target="_blank" rel="noopener">View dashboard <span aria-hidden="true">↗</span></a>
+          <a class="workv-btn workv-btn-secondary" href="https://github.com/catherine-echendu/workforce-reward-satisfaction-analysis" target="_blank" rel="noopener">Explore on GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-
-      <div class="case-grid">
-        <div class="case-block">
-          <span class="case-block-label">Outcome measure</span>
-          <p class="case-block-body">I built a seven-item job-satisfaction index on a 1–5 scale, where 5 indicates the highest satisfaction. The final weighted mean was <span class="data">3.65/5</span> (95% CI 3.62–3.67), based on <span class="data">21,784</span> valid index records from the <span class="data">21,981</span>-employee dataset.</p>
-        </div>
-        <div class="case-block">
-          <span class="case-block-label">Training gradient</span>
-          <p class="case-block-body">Weighted mean job satisfaction rose across training groups: <span class="data">3.46</span> (none), <span class="data">3.52</span> (under 1 day), <span class="data">3.66</span> (1–2 days), <span class="data">3.78</span> (3–5 days), <span class="data">3.85</span> (6–9 days), and <span class="data">4.00</span> (10+ days). Training was the only positive benefit lever in the final weighted model.</p>
-        </div>
-      </div>
-
-      <div class="case-grid">
-        <div class="case-block">
-          <span class="case-block-label">Pay evidence</span>
-          <p class="case-block-body">In the adjusted model, pay satisfaction had about <span class="data">3.6×</span> the effect estimate of grouped pay band. This points to pay experience as an important line of enquiry, not simply pay level.</p>
-        </div>
-        <div class="case-block">
-          <span class="case-block-label">Segment analysis</span>
-          <p class="case-block-body">The weighted decision-tree sensitivity check identified a segment representing <span class="data">5.1%</span> of the workforce with a <span class="data">61.8%</span> probability of low satisfaction: pay dissatisfaction, low training and 26+ contracted hours. This is a group-level signal for investigation, not a diagnosis of individuals.</p>
-        </div>
-      </div>
-
-      <div class="case-grid">
-        <div class="case-block">
-          <span class="case-block-label">Cross-tool validation</span>
-          <p class="case-block-body"><span class="data">22/22</span> independent SQL cross-validation checks passed. The maximum observed R-versus-SQL difference across checked outputs was <span class="data">0.005</span>.</p>
-        </div>
-        <div class="case-block">
-          <span class="case-block-label">Limitations</span>
-          <p class="case-block-body">WERS is observational survey data from 2011; associations do not prove causation and should not be treated as a current workforce forecast. Flexi-time and job-sharing measures had higher missingness (10.9% and 17.5%), so those results need particular caution.</p>
-        </div>
-      </div>
-
-      <p class="case-note">Decision relevance: the results help leaders investigate pay experience and training as potential priorities, then test those options against their own workforce, budget and operating context. The source microdata is not redistributed; the public repository contains code, documentation and aggregated outputs.</p>
-    </article>
-
-    <article class="case-card">
-      <div class="case-top">
-        <div class="case-tags">
-          <span class="tag">Commercial Analytics</span>
-          <span class="tag">Fintech</span>
-          <span class="tag">Customer MI</span>
-        </div>
-        <span class="case-status"><span class="status-dot in-development"></span>In development. Scope defined, build planned.</span>
-      </div>
-
-      <h2 class="case-title">Customer &amp; Revenue Intelligence System</h2>
-
-      <p class="case-question">Where are customers churning, what drives retention, and how can commercial teams act on it faster?</p>
-
-      <div class="case-grid">
-        <div class="case-block case-block-wide">
-          <span class="case-block-label">Planned scope</span>
-          <p class="case-block-body data">Churn · Funnel analysis · Segmentation · Hypothesis testing · Automation · AI-assisted executive summaries</p>
-        </div>
-        <div class="case-block">
-          <span class="case-block-label">Planned stack</span>
-          <p class="case-block-body data">SQL · Power BI · DAX · R · n8n</p>
-          <span class="case-note">Repository will be added once the MVP is public.</span>
+      <div class="workv-visual" aria-label="Visual summary of weighted Workforce Employment Relations Survey results">
+        <div class="workv-dashboard">
+          <div class="workv-dashbar"><strong>Reward &amp; satisfaction | Overview</strong><span>WERS 2011 · WEIGHTED RESULTS</span></div>
+          <div class="workv-dashinner">
+            <div class="workv-metrics">
+              <div class="workv-metric"><span class="workv-lab">Mean satisfaction</span><strong>3.65<span class="workv-outof">/5</span></strong><span class="workv-foot">95% CI: 3.62 to 3.67</span></div>
+              <div class="workv-metric workv-metric-gold"><span class="workv-lab">Valid records</span><strong>21,784</strong><span class="workv-foot">From 21,981 employee records</span></div>
+              <div class="workv-metric"><span class="workv-lab">SQL checks passed</span><strong>22/22</strong><span class="workv-foot">Max difference: 0.005</span></div>
+            </div>
+            <div class="workv-vizgrid">
+              <div class="workv-panel">
+                <div class="workv-panelhead"><strong>Training and job satisfaction</strong><span>Weighted mean<br>scale 1 to 5</span></div>
+                <div class="workv-bars">
+                  <div class="workv-barrow"><span>None</span><div class="workv-track"><div class="workv-fill" style="width:69.2%"></div></div><b>3.46</b></div>
+                  <div class="workv-barrow"><span>&lt; 1 day</span><div class="workv-track"><div class="workv-fill" style="width:70.4%"></div></div><b>3.52</b></div>
+                  <div class="workv-barrow"><span>1 to 2 days</span><div class="workv-track"><div class="workv-fill" style="width:73.2%"></div></div><b>3.66</b></div>
+                  <div class="workv-barrow"><span>3 to 5 days</span><div class="workv-track"><div class="workv-fill" style="width:75.6%"></div></div><b>3.78</b></div>
+                  <div class="workv-barrow"><span>6 to 9 days</span><div class="workv-track"><div class="workv-fill" style="width:77%"></div></div><b>3.85</b></div>
+                  <div class="workv-barrow"><span>10+ days</span><div class="workv-track"><div class="workv-fill" style="width:80%"></div></div><b>4.00</b></div>
+                </div>
+              </div>
+              <div class="workv-insights">
+                <div class="workv-mini workv-mini-green"><strong>3.6×</strong><span>Pay satisfaction effect estimate compared with grouped pay band</span></div>
+                <div class="workv-mini workv-mini-blue"><strong>5.1%</strong><span>Workforce share in the identified segment</span></div>
+                <div class="workv-mini workv-mini-gold"><strong>61.8%</strong><span>Low satisfaction probability within that segment</span></div>
+              </div>
+            </div>
+            <div class="workv-quality"><span>Cross-tool quality check</span><strong>22 of 22 passed · Maximum R to SQL difference 0.005</strong></div>
+          </div>
         </div>
       </div>
     </article>
-
+    <div class="workv-scrollhint"><span aria-hidden="true">↓</span> Scroll to see the evidence behind the decision</div>
   </section>
 
+  <section class="workv-walk" id="walkthrough">
+    <div class="workv-shell">
+      <p class="workv-kicker">Project walkthrough · On this page</p>
+      <h2 class="workv-walk-title">What the evidence says</h2>
+      <p class="workv-walk-sub">Three visual signals from the analysis, each connected to a practical question for People leaders. These are associations in an observational 2011 survey, not causal claims.</p>
+      <div class="workv-steps">
+        <article class="workv-step workv-step-training">
+          <div class="workv-stephead"><span class="workv-stepnum">01</span><div><strong>Training shows a consistent gradient</strong><small>Weighted mean satisfaction · scale 1 to 5</small></div></div>
+          <div class="workv-bigfind"><strong>3.46 <span aria-hidden="true">→</span> 4.00</strong><span>from no training to 10+ training days</span></div>
+          <div class="workv-walkbars">
+            <div class="workv-walkrow"><span>No training</span><div class="workv-walktrack"><div class="workv-walkfill" style="width:69.2%"></div></div><b>3.46</b></div>
+            <div class="workv-walkrow"><span>Under 1 day</span><div class="workv-walktrack"><div class="workv-walkfill" style="width:70.4%"></div></div><b>3.52</b></div>
+            <div class="workv-walkrow"><span>1 to 2 days</span><div class="workv-walktrack"><div class="workv-walkfill" style="width:73.2%"></div></div><b>3.66</b></div>
+            <div class="workv-walkrow"><span>3 to 5 days</span><div class="workv-walktrack"><div class="workv-walkfill" style="width:75.6%"></div></div><b>3.78</b></div>
+            <div class="workv-walkrow"><span>6 to 9 days</span><div class="workv-walktrack"><div class="workv-walkfill" style="width:77%"></div></div><b>3.85</b></div>
+            <div class="workv-walkrow"><span>10+ days</span><div class="workv-walktrack"><div class="workv-walkfill" style="width:80%"></div></div><b>4.00</b></div>
+          </div>
+          <p class="workv-stepnote">Training was the only positive benefit lever in the final weighted model.</p>
+        </article>
+        <article class="workv-step">
+          <div class="workv-stephead"><span class="workv-stepnum">02</span><div><strong>Pay experience stands out</strong><small>Adjusted model comparison</small></div></div>
+          <div class="workv-insightnum">≈3.6×</div>
+          <p class="workv-insighttext">Pay satisfaction had about 3.6 times the effect estimate of grouped pay band in the adjusted model.</p>
+          <div class="workv-inset"><strong>Question for leaders</strong><br>Are employees satisfied with their pay experience, not only the amount they receive?</div>
+        </article>
+        <article class="workv-step">
+          <div class="workv-stephead"><span class="workv-stepnum">03</span><div><strong>A smaller segment merits attention</strong><small>Weighted decision-tree sensitivity check</small></div></div>
+          <div class="workv-insightnum">5.1%</div>
+          <p class="workv-insighttext">Share of the workforce in a segment with a <strong>61.8%</strong> probability of low satisfaction.</p>
+          <div class="workv-inset"><strong>Signals in the segment</strong><br>Pay dissatisfaction · Low training · 26+ contracted hours</div>
+        </article>
+      </div>
+      <section class="workv-decision">
+        <div class="workv-decision-intro"><h3>What could a team do next?</h3><p>The analysis helps prioritise investigation. It does not prove which intervention will cause satisfaction to improve.</p></div>
+        <div class="workv-actions3">
+          <div class="workv-act"><span class="workv-acticon">1</span><div><strong>Investigate pay experience</strong><span>Review fairness, communication and employee feedback alongside pay levels.</span></div></div>
+          <div class="workv-act"><span class="workv-acticon">2</span><div><strong>Test training priorities</strong><span>Evaluate targeted training options against budget and current workforce needs.</span></div></div>
+          <div class="workv-act"><span class="workv-acticon">3</span><div><strong>Validate locally</strong><span>Test whether these historical signals hold in the organisation’s current data.</span></div></div>
+        </div>
+      </section>
+      <div class="workv-caveat"><span><strong>Evidence quality:</strong> 22/22 independent SQL checks passed; maximum R to SQL difference 0.005. WERS 2011 is observational, so association does not establish causation. The identified segment is a group-level signal, not an individual diagnosis. Flexitime missingness was 10.9% and job-sharing missingness was 17.5%, so those measures need particular caution.</span><strong>3.65 / 5 · 21,784 valid records</strong></div>
+      <div class="workv-walk-actions">
+        <a class="workv-btn workv-btn-secondary" href="https://github.com/catherine-echendu/workforce-reward-satisfaction-analysis" target="_blank" rel="noopener">Explore methods and code <span aria-hidden="true">↗</span></a>
+        <a class="workv-btn workv-btn-gold" href="https://github.com/catherine-echendu/workforce-reward-satisfaction-analysis/blob/main/05_powerbi/wers_reward_satisfaction_dashboard.pdf" target="_blank" rel="noopener">Open full dashboard <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="workv-disclosure">WERS is historical observational data, not a current workforce forecast. Source microdata is not redistributed; the public repository contains code, documentation and aggregated outputs.</p>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
