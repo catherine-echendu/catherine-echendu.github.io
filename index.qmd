@@ -46,7 +46,7 @@ pagetitle: "Catherine Echendu | Business Signal & Decision Support"
             <span class="signal-label">Decision impact</span>
             <span class="signal-impact"><span class="impact-line">SLA breaches down from <span class="data">8 to 3</span></span><span class="impact-line">Reporting errors cut <span class="data">35%</span></span></span>
           </div>
-          <!-- Future enhancement: optional "Let me walk you through the work" video CTA linking to a project walkthrough once a real video exists. -->
+          <!-- Future enhancement: optional "Let me walk you through the work" video CTA linking to a project walkthrough once a real video exists.. -->
         </div>
       </div>
     </div>
