@@ -514,3 +514,18 @@ a:hover { color: var(--teal-hover); }
   .journey { transform: translateY(-14px); }
   .stage { padding-bottom: 18px; }
 }
+
+
+/* Contact page: a prominent, compact email call to action. */
+.contact-cta {
+  margin: 0 0 20px;
+  min-height: 44px;
+  padding: 12px 22px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  justify-content: center;
+}
+.contact-cta:focus-visible {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 3px;
+}
