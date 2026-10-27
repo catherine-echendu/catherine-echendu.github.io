@@ -46,7 +46,8 @@ pagetitle: "Catherine Echendu | Business Signal & Decision Support"
             <span class="signal-label">Business judgement</span>
             <span class="signal-value">Recommended against market entry<br /><span class="data">Integrity over faster payback</span></span>
           </div>
-          <!-- Future enhancement: optional "Let me walk you through the work" video CTA linking to a project walkthrough once a real video exists. -->
+        </div>
+        <!-- Future enhancement: optional "Let me walk you through the work" video CTA linking to a project walkthrough once a real video exists. -->
         </div>
       </div>
     </div>
