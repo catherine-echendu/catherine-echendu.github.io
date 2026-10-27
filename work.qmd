@@ -120,7 +120,7 @@ pagetitle: "Work | Catherine Echendu"
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <span class="footer-copy">&copy; 2026 Catherine Echendu &middot; Poole/London</span>
+    <span class="footer-copy">&copy; 2026 Catherine Echendu &middot; Poole, Dorset</span>
     <span class="footer-links">
       <a href="https://www.linkedin.com/in/catherineechendu" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/catherine-echendu" target="_blank" rel="noopener">GitHub</a>
