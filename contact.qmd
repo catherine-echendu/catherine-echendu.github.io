@@ -21,7 +21,7 @@ pagetitle: "Contact | Catherine Echendu"
     <div class="contact-left">
       <p class="page-kicker">Get in touch</p>
       <h1 class="contact-title">Let&rsquo;s turn the signal into a decision.</h1>
-      <p class="contact-lead">Open to Data Analyst, Reporting and Insights, Customer Insights and Commercial Analyst roles with teams able to support Skilled Worker sponsorship. The fastest way to reach me is by LinkedIn or email.</p>
+      <p class="contact-lead"><strong>I’m not a one-size-fits-all analyst.</strong> My strength is the combination of commercial experience, business acumen and hands-on analytics, brought together with structured, logical reasoning. I start with the business question, test what the evidence supports, and explain what it means for action. If that is the perspective your team needs, let’s talk.</p>
 
       <ul class="contact-list">
         <li>
@@ -46,7 +46,7 @@ pagetitle: "Contact | Catherine Echendu"
           <span class="contact-ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </span>
-          <span class="contact-plain">Poole / London, United Kingdom</span>
+          <span class="contact-plain">Poole, Dorset</span>
         </li>
       </ul>
 
@@ -65,7 +65,7 @@ pagetitle: "Contact | Catherine Echendu"
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <span class="footer-copy">&copy; 2026 Catherine Echendu &middot; Poole/London</span>
+    <span class="footer-copy">&copy; 2026 Catherine Echendu &middot; Poole, Dorset</span>
     <span class="footer-links">
       <a href="https://www.linkedin.com/in/catherineechendu" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/catherine-echendu" target="_blank" rel="noopener">GitHub</a>

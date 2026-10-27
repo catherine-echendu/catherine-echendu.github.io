@@ -34,21 +34,57 @@ pagetitle: "Work | Catherine Echendu"
         <span class="case-status"><span class="status-dot complete"></span>Complete. Modelling, SQL validation, Power BI dashboard and advisory report delivered.</span>
       </div>
 
-      <h2 class="case-title">Workforce Reward &amp; Retention Analysis</h2>
+      <h2 class="case-title">Workforce Reward &amp; Job Satisfaction Analysis</h2>
 
-      <p class="case-question">Which reward and workplace levers are most linked to job satisfaction, and how should employers prioritise action with limited budget?</p>
+      <p class="case-question">Which reward and workplace factors are associated with job satisfaction, and how can employers use the evidence to prioritise action within budget constraints?</p>
 
       <div class="case-grid">
         <div class="case-block case-block-wide">
           <span class="case-block-label">Evidence</span>
-          <p class="case-block-body data">21,981 employee survey responses · Weighted analysis · Regression · Decision tree · 4-page Power BI dashboard · Advisory report</p>
+          <p class="case-block-body data">21,981 WERS responses · 21,784 valid job-satisfaction records · Weighted analysis · Regression · Decision-tree sensitivity check · 22 SQL checks · 4-page Power BI dashboard · Advisory report</p>
         </div>
         <div class="case-block">
           <span class="case-block-label">Stack</span>
           <p class="case-block-body data">R · SQL · Power BI · Excel</p>
           <a href="https://github.com/catherine-echendu/workforce-reward-satisfaction-analysis" class="btn btn-primary btn-sm case-cta" target="_blank" rel="noopener">View on GitHub</a>
+          <a href="https://github.com/catherine-echendu/workforce-reward-satisfaction-analysis/blob/main/05_powerbi/wers_reward_satisfaction_dashboard.pdf" class="btn btn-ghost btn-sm case-cta" target="_blank" rel="noopener">View dashboard PDF</a>
         </div>
       </div>
+
+      <div class="case-grid">
+        <div class="case-block">
+          <span class="case-block-label">Outcome measure</span>
+          <p class="case-block-body">I built a seven-item job-satisfaction index on a 1–5 scale, where 5 indicates the highest satisfaction. The final weighted mean was <span class="data">3.65/5</span> (95% CI 3.62–3.67), based on <span class="data">21,784</span> valid index records from the <span class="data">21,981</span>-employee dataset.</p>
+        </div>
+        <div class="case-block">
+          <span class="case-block-label">Training gradient</span>
+          <p class="case-block-body">Weighted mean job satisfaction rose across training groups: <span class="data">3.46</span> (none), <span class="data">3.52</span> (under 1 day), <span class="data">3.66</span> (1–2 days), <span class="data">3.78</span> (3–5 days), <span class="data">3.85</span> (6–9 days), and <span class="data">4.00</span> (10+ days). Training was the only positive benefit lever in the final weighted model.</p>
+        </div>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-block">
+          <span class="case-block-label">Pay evidence</span>
+          <p class="case-block-body">In the adjusted model, pay satisfaction had about <span class="data">3.6×</span> the effect estimate of grouped pay band. This points to pay experience as an important line of enquiry, not simply pay level.</p>
+        </div>
+        <div class="case-block">
+          <span class="case-block-label">Segment analysis</span>
+          <p class="case-block-body">The weighted decision-tree sensitivity check identified a segment representing <span class="data">5.1%</span> of the workforce with a <span class="data">61.8%</span> probability of low satisfaction: pay dissatisfaction, low training and 26+ contracted hours. This is a group-level signal for investigation, not a diagnosis of individuals.</p>
+        </div>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-block">
+          <span class="case-block-label">Cross-tool validation</span>
+          <p class="case-block-body"><span class="data">22/22</span> independent SQL cross-validation checks passed. The maximum observed R-versus-SQL difference across checked outputs was <span class="data">0.005</span>.</p>
+        </div>
+        <div class="case-block">
+          <span class="case-block-label">Limitations</span>
+          <p class="case-block-body">WERS is observational survey data from 2011; associations do not prove causation and should not be treated as a current workforce forecast. Flexi-time and job-sharing measures had higher missingness (10.9% and 17.5%), so those results need particular caution.</p>
+        </div>
+      </div>
+
+      <p class="case-note">Decision relevance: the results help leaders investigate pay experience and training as potential priorities, then test those options against their own workforce, budget and operating context. The source microdata is not redistributed; the public repository contains code, documentation and aggregated outputs.</p>
     </article>
 
     <article class="case-card">
@@ -67,11 +103,11 @@ pagetitle: "Work | Catherine Echendu"
 
       <div class="case-grid">
         <div class="case-block case-block-wide">
-          <span class="case-block-label">Approach</span>
+          <span class="case-block-label">Planned scope</span>
           <p class="case-block-body data">Churn · Funnel analysis · Segmentation · Hypothesis testing · Automation · AI-assisted executive summaries</p>
         </div>
         <div class="case-block">
-          <span class="case-block-label">Stack</span>
+          <span class="case-block-label">Planned stack</span>
           <p class="case-block-body data">SQL · Power BI · DAX · R · n8n</p>
           <span class="case-note">Repository will be added once the MVP is public.</span>
         </div>
@@ -84,7 +120,7 @@ pagetitle: "Work | Catherine Echendu"
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <span class="footer-copy">&copy; 2026 Catherine Echendu &middot; Poole/London</span>
+    <span class="footer-copy">&copy; 2026 Catherine Echendu &middot; Poole, Dorset</span>
     <span class="footer-links">
       <a href="https://www.linkedin.com/in/catherineechendu" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/catherine-echendu" target="_blank" rel="noopener">GitHub</a>
